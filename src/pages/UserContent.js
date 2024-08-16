@@ -102,7 +102,7 @@ async (confirm_permission) =>
                 click: async () => await PrepareModeration(0, 0, DeleteQuestion)
             }
         }),
-        //for resposne page
+        //for response page
         CreateElement("button", {
             textContent: `🗑️ ${Config[Market].DeleteButtonText}`,
             style: "margin-left:10px; font-family: Verdana, sans-serif; font-size: 13px; padding: 10px 20px; border: 2px solid #fc0303; color: #fc0303; background-color: transparent; cursor: pointer; transition: all 0.3s ease; outline: none; border-radius: 5px; display: inline-block; text-decoration: none;",
