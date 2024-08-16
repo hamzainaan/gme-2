@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "GME - Genişletilmiş Moderasyon Eklentisi",
+  "description": "Sorun olursa: hamza[at]inanweb.com.tr | hamzainaan[at]pm.me",
+  "version": "1.6",
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "permissions": [
+      "storage"
+    ]
+  },
+  "content_scripts": [
+    {
+      "js": ["./core.js"],
+      "matches": ["*://eodev.com/*", "*://brainly.com/*"],
+      "run_at": "document_end"
+    }
+  ]
+}
